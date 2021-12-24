@@ -1,0 +1,713 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand-Medium;
+}
+
+@font-face {
+    font-family: Quicksand-Medium;
+    src:url(pismo/Quicksand-Medium.ttf);
+
+  }
+ /*navbar*/
+ .navbar-default {
+    background: transparent;
+    padding-top: 5%;
+  }
+  .overlay {
+    background-image: url(images/Frankovacka-blur.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-y: hidden;
+    display: none;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 40px;
+}
+             .sidenav {
+             height: 100%;
+             width: 0;
+             position: fixed;
+             z-index: 1;
+             top: 0;
+             right: 0;
+             overflow-x: hidden;
+             transition: 0.5s;
+             padding-top: 30px;
+             }
+             .sidenav a {
+             text-decoration: none;
+             color: #000;
+             display: block;
+             transition: 0.3s;
+             opacity: 1;
+             }
+
+             .sidenav .closebtn {
+             position: absolute;
+             top: 0;
+             right: 25px;
+             font-size: 36px;
+             margin-left: 50px;
+             }
+            
+             @media screen and (max-height: 450px) {
+             .sidenav {padding-top: 15px;}
+             .sidenav a {font-size: 18px;}
+             }
+             @media (max-width:320px) { 
+              .evrofin-logo
+              {
+                width: 70%;
+                height: auto;
+              }
+            
+              .jazyky-ikony
+              {
+                width: 15%;
+                height: auto;
+              }
+              .display-small
+              {
+                display: none;
+              }
+              
+             }
+             @media (max-width:600px) { 
+             h1
+             {
+             font-size: 3em;
+             }
+             h4
+             {
+             font-size: 1.5em;
+             }
+             .evrofin-logo
+             {
+               width: 70%;
+               height: auto;
+             }
+             .jazyky-ikony
+             {
+               width: 15%;
+               height: auto;
+             }
+             
+             }
+             @media (min-width:601px) { 
+              .jazyky-ikony
+              {
+                width: 15%;
+                height: auto;
+              }
+              .evrofin-logo
+              {
+                width: 80%;
+                height: auto;
+              }
+             
+             }
+             @media (min-width:992px) { 
+              .jazyky-ikony
+              {
+                width: 10%;
+                height: auto;
+              }
+              .evrofin-logo
+              {
+                width: 40%;
+                height: auto;
+              }
+              .eu-logo
+              {
+                margin-top: 3%;
+              }
+              .card-evrofin-eu
+              {
+                margin-top: 3%;
+              }
+            }
+            @media (min-width:1200px) { 
+              .jazyky-ikony
+              {
+                width: 8%;
+                height: auto;
+
+              }
+              .evrofin-logo
+              {
+                width: 30%;
+                height: auto;
+              }
+              .eu-logo
+              {
+                margin-top: 5%;
+              }
+              .card-evrofin-eu
+              {
+                margin-top: 3%;
+              }
+            }
+             
+             /*end navbar*/
+             /* ----------------------------------- INDEX -----------------------------------*/
+             @-webkit-keyframes scroll {
+                0% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                }
+                100% {
+                  -webkit-transform: translateX(calc(-270px * 13));
+                          transform: translateX(calc(-270px * 13));
+                }
+              }
+              
+              @keyframes scroll {
+                0% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                }
+                100% {
+                  -webkit-transform: translateX(calc(-270px * 13));
+                          transform: translateX(calc(-270px * 13));
+                }
+              }
+              .slider {
+                background: pr;
+                box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+                height: 100px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+              }
+              .slider::before, .slider::after {
+                background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 300px;
+                z-index: 2;
+              }
+              .slider::after {
+                right: 0;
+                top: 0;
+                -webkit-transform: rotateZ(180deg);
+                        transform: rotateZ(180deg);
+              }
+              .slider::before {
+                left: 0;
+                top: 0;
+              }
+              .slider .slide-track {
+                -webkit-animation: scroll 40s linear infinite;
+                        animation: scroll 40s linear infinite;
+                display: flex;
+                width: calc(175px * 26);
+              }
+            .logo
+            {
+                width: 40%;
+                height: auto;
+                margin-left: 5%;
+            }
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 1.2em;
+            }
+
+            nav ul li a {
+                display: inline-block;
+                color: #333;
+                text-decoration: none;
+                -webkit-transition: 0.2s linear;
+                -moz-transition: 0.2s linear;
+                -ms-transition: 0.2s linear;
+                -o-transition: 0.2s linear;
+                transition: 0.2s linear;
+            }
+           
+            .languages
+            {
+                position: absolute;
+                padding-top: 25px;
+                right: 5%;
+                cursor: pointer;
+                font-size: 0.8em;
+            }
+            .languages p
+            {
+                padding-left: 5px;
+            }
+            .muted-text
+            {
+                color: #99BBD2;
+            }
+            .menu
+            {
+                position:absolute;
+                left: 80%;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+
+            nav ul li a:hover {
+                /*background: #f8f8f8;
+                color: #515151;*/
+                color: white;
+
+            }
+            nav ul li a .fa {
+                width: 16px;
+                text-align: center;
+                margin-left: 10px;
+            }
+
+            nav ul li ul li a {
+                border-left: 4px solid transparent;
+                padding: 3px !important;
+                font-size: 18px !important;
+            }
+            nav ul li ul li a:hover {
+                border-left: 8px solid #3498db;
+                margin-left: 10px;
+            }
+            .header.scrolling {
+                background-color: #28526b;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+           
+            .text-justify
+            {
+                text-align: justify;
+            }
+            .middle-padding-left
+            {
+                padding-left: 5%;
+            }
+            header {
+                position: relative;
+                height: 100vh;
+                min-height: 25rem;
+                width: 100%;
+                overflow: hidden;
+              }
+              
+              header video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: 0;
+                -ms-transform: translateX(-50%) translateY(-50%);
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+              }
+              
+              header .container-fluid {
+                position: relative;
+                z-index: 2;
+              }
+
+            .home-info
+            {
+                position: absolute;
+                top:85%;
+                left: 65%;
+
+            }
+            .home-info, h5
+            {
+                padding-top: 10px;
+            }
+            .home-info-space
+            {
+                padding-right: 40px;
+                text-align: center;
+
+            }
+            @media only screen and (max-width: 600px) {
+              .main-nadpis-padding-top
+              {
+                padding-top: 3em;
+              }
+                .home-info-space
+            {
+                display: none;
+
+            }
+            .button-mobile-margin
+            {
+              margin-bottom: 2em;
+            }
+            .mobile-margin
+            {
+              margin-top: 2em;
+            }
+            }
+            .podtext
+            {
+                font-size: 0.7em;
+            }
+          .card-evrofin
+          {
+              border: none;
+              padding-top: 10%;
+              padding-left: 5%;
+          }
+          .border-left
+          {
+            border-left: 10px solid #9DC9E6;
+          }
+          .border-top
+          {
+            border-bottom: 10px solid #9DC9E6;
+          }
+          .border-left-kontakt
+          {
+            border-left: 10px solid #9DC9E6;
+            padding-left: 5%;
+            height: 70%;
+          }
+          
+          .btn-vice
+          {
+              width: 180px;
+              border-radius: 0%;
+              border: 1px solid #9DC9E6;
+                 
+          }
+          .btn-vice-o-spolecnosti
+          {
+              width: 250px;
+              border-radius: 0%;
+              border: 2px solid #fff;
+              
+              
+          }
+          .btn-vice-o-spolecnosti a
+          {
+              text-decoration: none;
+              color: white;
+              font-size: 1.3em;
+          }
+          .btn-vice-o-spolecnosti a:hover
+          {
+              text-decoration: none;
+              color: white;
+              font-size: 1.3em;
+          }
+          .card
+          {
+              border: none;
+          }
+          .btn-o-nas
+          {
+              width: 180px;
+              border-radius: 0%;
+              border: 1px solid #9DC9E6;
+              text-decoration: none;
+              color: white;
+          }
+          .btn-vsechny-kontakty
+          {
+              width: 250px;
+              border-radius: 0%;
+              border: 2px solid white;
+              text-decoration: none;
+              color: white;
+          }
+          a, a:hover
+          {
+            text-decoration: none;
+            color: black;
+          }
+          .kontakty-banner
+          {
+              background-image: url(images/EVROFIN-web2021_22.jpg);
+          }
+          .certificates
+           {
+              width: 30%;
+              height: auto;
+              margin-left: 15%;
+            
+            }
+            .certificates img
+            {
+                padding-top: 70%;
+               padding-left: 30%;
+             
+             }
+             .certificates-text
+             {
+                 font-size: 0.8em;
+             }
+
+             /* ----------------------------------- STEBLER PAGE -----------------------------------*/
+             .ikony-stebler
+             {
+                 width: 12%;
+                 height: auto;
+             }
+             .stebler
+             {
+               background-image: url(images/EVROFIN-web2021-slider-Stebler.jpg);
+               background-position: center;
+               background-size: cover;
+             }
+            
+             /* ----------------------------------- PACKAGING -----------------------------------*/
+              ul {
+                list-style: none; 
+              }
+              /* ----------------------------------- INSPIRE FLEX -----------------------------------*/
+              .inspire-flex
+              {
+                background-image: url(images/EVROFIN-web2021-slider-InspireFlex.jpg);
+                background-position: center;
+                background-size: cover;
+              }
+              body > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > ul li::before
+              {
+                content: "■"; 
+                color: #28526b; 
+                display: inline-block;
+                width: 2em; 
+                margin-left: -2em;
+              }
+              body > div:nth-child(4) > div.row.mb-5 > div:nth-child(2) > ul li::before              {
+                content: "■"; 
+                color: #28526b; 
+                display: inline-block;
+                width: 2em; 
+                margin-left: -2em;
+              }
+              .packaging
+              {
+                background-image: url(images/EVROFIN-web2021-slider-Packaging.jpg);
+                background-position: center;
+                background-size: cover;
+              }
+
+              /* ----------------------------------- FRANKOVACÍ STROJE -----------------------------------*/
+              .frankovaci-stroje
+              {
+                  background-image: url(images/EVROFIN-web2021-pruh-FrankovaciStroje.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  
+              }
+              .padding-top-frankovaci-stroje
+              {
+                padding-top: 15%;
+              }
+              .border-top-frankovaci-stroje
+              {
+                border-bottom: 10px solid #9DC9E6;
+                width: 98%;
+                margin-left: 1%;
+              }
+              .table, .left
+              {
+                  text-align: left;
+              }
+              .table, .right
+              {
+                  text-align: right;
+              }
+              
+              body > div > div:nth-child(2) > div:nth-child(2) > ul li::before
+              {
+                content: "■"; 
+                color: #28526b; 
+                display: inline-block;
+                width: 2em; 
+                margin-left: -2em;
+              }
+              body > div > div:nth-child(3) > div:nth-child(5)  > ul li::before             {
+                content: "■"; 
+                color: #28526b; 
+                display: inline-block;
+                width: 2em; 
+                margin-left: -2em;
+              }
+              body > div > div:nth-child(4) > div:nth-child(5) > ul li::before
+              {
+                content: "■"; 
+                color: #28526b; 
+                display: inline-block;
+                width: 2em; 
+                margin-left: -2em;
+              }
+              /* ----------------------------------- OBÁLKOVACÍ STROJE -----------------------------------*/
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(1) > div.col-md-6.middle-padding-left > ul li::before
+              {
+                content: "■"; 
+                color: #28526b; 
+                display: inline-block;
+                width: 2em; 
+                margin-left: -2em;
+              }
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(2) > div:nth-child(4) > ul li::before,
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(2) > div.col-md-6.middle-padding-left > ul li::before,
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(3) > div.col-md-6.mt-4 > ul li::before,
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(4) > div:nth-child(4) > ul li::before,
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(5) > div:nth-child(4) > ul li::before,
+              body > div.container.padding-top-frankovaci-stroje > div:nth-child(5) > div.col-md-6.mt-4.middle-padding-left > ul li::before
+              
+                {
+                    content: "■"; 
+                    color: #28526b; 
+                    display: inline-block;
+                    width: 2em; 
+                    margin-left: -2em;
+                  }
+                  /* ----------------------------------- VYSOKOKAPACITNÍ LINKY -----------------------------------*/
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(2) > div.col-md-6.middle-padding-left > div > ul li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(3) > div.col-md-6.middle-padding-left > ul li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(4) > div.col-md-6.middle-padding-left > ul li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(5) > div.col-md-6.middle-padding-left > ul li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(1) > div:nth-child(6) > ul li::before
+                  {
+                    content: "■"; 
+                    color: #28526b; 
+                    display: inline-block;
+                    width: 2em; 
+                    margin-left: -2em;
+                  }
+                  .dva-table-display
+                  {
+                      visibility: hidden;
+                  }
+                  
+                a.morelink {
+                    color: #0254EB;
+                    text-decoration:none;
+                    outline: none;
+                }
+                .morecontent span {
+                    display: none;
+                }
+                /* ----------------------------------- KONTAKTY -----------------------------------*/
+                .padding-top-kontakty
+                {
+                  padding-top: 10%;
+                }
+                body > div > div > div:nth-child(1) > ul:nth-child(3) > li::before,
+                body > div > div > div:nth-child(1) > ul:nth-child(4) > li::before,
+                body > div > div > div:nth-child(2) > ul:nth-child(3) > li::before,
+                body > div > div > div:nth-child(2) > ul:nth-child(4) > li::before,
+                body > div > div > div:nth-child(3) > ul li::before,
+                body > div > div > div:nth-child(4) > ul li::before,
+                body > div > div > div:nth-child(6) > ul li::before,
+                body > div > div > div:nth-child(7) > ul li::before
+                {
+                  content: "■"; 
+                  color: #28526b; 
+                  display: inline-block;
+                  width: 2em; 
+                  margin-left: -2em;
+                }
+                .visibility-hidden
+                {
+                  visibility: hidden;
+                }
+                .space-kontakty
+                {
+                  margin-top: -2%;
+                }
+                .margin-left-kontakty
+                {
+                  margin-left: 6%;
+                }
+                .margin-left-text-kontakty
+                {
+                  margin-left: 5px;
+                }
+                .kontakty
+                {
+
+                  background-image: url(images/EVROFIN-web2021-pruh-Kontakty.jpg);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .border-top-kontakty
+              {
+                border-bottom: 10px solid #9DC9E6;
+                width: 95%;
+                margin-left: 5%;
+              }
+               /* ----------------------------------- DIVIZE SLUŽEB -----------------------------------*/
+
+              strong {
+                font-weight: bolder;
+            }
+            .dva-nadpisy-display
+                  {
+                      visibility: hidden;
+                  }
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(4) > div:nth-child(1) > ul:nth-child(6) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(5) > div:nth-child(2) > ul:nth-child(5) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(7) > div:nth-child(2) > ul > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(8) > div:nth-child(2) > ul:nth-child(5) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div.col-md-10.mt-4 > ul > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(11) > div:nth-child(1) > ul:nth-child(2) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(11) > div.col-md-6.mt-4.middle-padding-left > ul:nth-child(2) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(11) > div:nth-child(1) > ul:nth-child(6) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(11) > div.col-md-6.mt-4.middle-padding-left > ul:nth-child(6) > li::before,
+                  body > div.container.padding-top-frankovaci-stroje > div:nth-child(4) > div:nth-child(1) > ul:nth-child(8) > li::before
+                  
+                  {
+                    content: "■"; 
+                    color: #28526b; 
+                    display: inline-block;
+                    width: 2em; 
+                    margin-left: -2em;
+                  }
+                 /* ----------------------------------- EVROFIN EU-----------------------------------*/
+                  .jazyky
+                  {
+                    display: flex;
+                    align-items: center;
+                  }
+                  .evrofin-onclick
+                  {
+                    cursor: pointer;
+                  }
+
